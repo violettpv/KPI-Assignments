@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="scores-table">
+            <div class="round">
+                Round: <span id="round"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Player</th>
+                        <th>Bot</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General</td>
+                        <td id="t-general-p"></td>
+                        <td id="t-general-b"></td>
+                    </tr>
+                    <tr>
+                        <td>Four</td>
+                        <td id="t-four-p"></td>
+                        <td id="t-four-b"></td>
+                    </tr>
+                    <tr>
+                        <td>Full House</td>
+                        <td id="t-fh-p"></td>
+                        <td id="t-fh-b"></td>
+                    </tr>
+                    <tr>
+                        <td>Street</td>
+                        <td id="t-street-p"></td>
+                        <td id="t-street-b"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td id="t-6-p"></td>
+                        <td id="t-6-b"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td id="t-5-p"></td>
+                        <td id="t-5-b"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td id="t-4-p"></td>
+                        <td id="t-4-b"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td id="t-3-p"></td>
+                        <td id="t-3-b"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="t-2-p"></td>
+                        <td id="t-2-b"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td id="t-1-p"></td>
+                        <td id="t-1-b"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="board">
+            <div class="game">
+                <div class="dice-group" id="dice-1">
+                    <div id="dice" class="inner-dice">
+                        <img id="animation" src="img/dice.gif" class="animation hidden">
+                        <img id="1" src="img/1.svg" class="1">
+                        <img id="2" src="img/2.svg" class="2 hidden">
+                        <img id="3" src="img/3.svg" class="3 hidden">
+                        <img id="4" src="img/4.svg" class="4 hidden">
+                        <img id="5" src="img/5.svg" class="5 hidden">
+                        <img id="6" src="img/6.svg" class="6 hidden">
+                    </div>
+                    <input type="checkbox" id="dice-1-cb" class="dice-1-cb">
+                </div>
+                <div class="dice-group" id="dice-2">
+                    <div id="dice" class="inner-dice">
+                        <img id="animation" src="img/dice.gif" class="animation hidden">
+                        <img id="1" src="img/1.svg" class="1">
+                        <img id="2" src="img/2.svg" class="2 hidden">
+                        <img id="3" src="img/3.svg" class="3 hidden">
+                        <img id="4" src="img/4.svg" class="4 hidden">
+                        <img id="5" src="img/5.svg" class="5 hidden">
+                        <img id="6" src="img/6.svg" class="6 hidden">
+                    </div>
+                    <input type="checkbox" id="dice-2-cb" class="dice-2-cb">
+                </div>
+                <div class="dice-group" id="dice-3">
+                    <div id="dice" class="inner-dice">
+                        <img id="animation" src="img/dice.gif" class="animation hidden">
+                        <img id="1" src="img/1.svg" class="1">
+                        <img id="2" src="img/2.svg" class="2 hidden">
+                        <img id="3" src="img/3.svg" class="3 hidden">
+                        <img id="4" src="img/4.svg" class="4 hidden">
+                        <img id="5" src="img/5.svg" class="5 hidden">
+                        <img id="6" src="img/6.svg" class="6 hidden">
+                    </div>
+                    <input type="checkbox" id="dice-3-cb" class="dice-3-cb">
+                </div>
+                <div class="dice-group" id="dice-4">
+                    <div id="dice" class="inner-dice">
+                        <img id="animation" src="img/dice.gif" class="animation hidden">
+                        <img id="1" src="img/1.svg" class="1">
+                        <img id="2" src="img/2.svg" class="2 hidden">
+                        <img id="3" src="img/3.svg" class="3 hidden">
+                        <img id="4" src="img/4.svg" class="4 hidden">
+                        <img id="5" src="img/5.svg" class="5 hidden">
+                        <img id="6" src="img/6.svg" class="6 hidden">
+                    </div>
+                    <input type="checkbox" id="dice-4-cb" class="dice-4-cb">
+                </div>
+                <div class="dice-group" id="dice-5">
+                    <div id="dice" class="inner-dice">
+                        <img id="animation" src="img/dice.gif" class="animation hidden">
+                        <img id="1" src="img/1.svg" class="1">
+                        <img id="2" src="img/2.svg" class="2 hidden">
+                        <img id="3" src="img/3.svg" class="3 hidden">
+                        <img id="4" src="img/4.svg" class="4 hidden">
+                        <img id="5" src="img/5.svg" class="5 hidden">
+                        <img id="6" src="img/6.svg" class="6 hidden">
+                    </div>
+                    <input type="checkbox" id="dice-5-cb" class="dice-5-cb">
+                </div>
+            </div>
+            <div class="controls">
+                <button id="roll-btn" class="hidden">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"> 
+                        Roll
+                    </span>
+                </button>
+                <button id="keep-btn" class="hidden">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"> 
+                        Keep
+                    </span>
+                </button>
+                <button id="lot-btn">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text">
+                        Lot
+                    </span>
+                </button>
+            </div>
+            <div class="stats"> 
+                <div class="stats-box" id="p-score-box">
+                    Player score: <span id="p-score"></span>
+                </div>
+                <div class="stats-box" id="b-score-box">
+                    Bot score: <span id="b-score"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

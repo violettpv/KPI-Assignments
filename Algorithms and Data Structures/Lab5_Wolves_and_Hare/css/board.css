@@ -1,0 +1,38 @@
+#board {
+    line-height: 0;
+    border: 1.3em solid rgb(82, 47, 52);
+    color: whitesmoke;
+    height: 100%;
+    transition: 0.5s;
+    user-select: none;
+}
+.rotated {
+    transform: rotate(180deg);
+}
+.rotated .animal {
+    transform: rotate(180deg);
+}
+#animals {
+    position: absolute;
+}
+.animal {
+    position: absolute;
+}
+.animal > img {
+    padding: 0.5em;
+}
+.black-square {
+    width: 4em;
+    height: 4em;
+    background-color: #181818;
+    display: inline-block;
+    margin: 0;
+}
+.white-square {
+    width: 4em;
+    height: 4em;
+    background-color: #a15d5d;
+    display: inline-block;
+    margin: 0;
+}
+

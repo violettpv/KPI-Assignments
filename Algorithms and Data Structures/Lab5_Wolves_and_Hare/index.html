@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/page.css" rel="stylesheet" />
+        <link href="css/board.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/svg" href="img/logo_rabbit.png">
+        <script src="js/board.js"></script>
+        <script src="js/ai.js"></script>
+        <script src="js/main.js"></script>
+        <title>Wolves and Hare</title>
+    </head>
+    <body>
+        <div id="notifications"></div>
+        <nav>
+            <img src="img/logo_rabbit.png" alt="rabbit" style="height: 45px; width: 45px;">
+            Wolves and Hare
+        </nav>
+        <main>
+            <div id="board" ondragstart="return false;">
+                <noscript>Enable javascript or check the console.</noscript>
+            </div>
+
+            <div class="main-info-page">
+                <form class="form-score" autocomplete="off" onSubmit="return false;">
+                    <div>
+                        <h4>Scores:</h4>
+                        <div class="form-row">
+                            <span class="wolf-name">Wolves</span>: <span id="win-wolf">0</span>
+                            <br>
+                            <span class="hare-name">Hare</span>: <span id="win-hare">0</span>
+                            <br>
+                            <button type="button" id="controls-reset-scores">Reset</button>
+                            <span id="win-ratio"></span>
+                        </div>
+                    </div>
+                    <div class="levels">
+                        <p>Select difficulty:</p>
+                        <div>
+                            <input type="radio" id="easy" name="difficulty" value="" checked>
+                            <label for="easy">Easy</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="medium" name="difficulty" value="">
+                            <label for="medium">Medium</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="hard" name="difficulty" value="">
+                            <label for="hard">Hard</label>
+                        </div>
+                    </div>
+                </form>
+    
+                <div class="description">
+                    <p>Information about the game can be found <a target="_blank" href="https://en.wikipedia.org/wiki/Fox_games#Fox_and_Hounds">here</a>.</p>
+                    <p>Board game "Wolves and Hare" (eng. "Fox and Hounds").</p>
+                    <p>Part of the project is artificial intelligence for the wolves side <br>using the Minimax (Alpha-beta pruning) algorithm.</p>
+                    <p>You play as a hare.🐇</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr />
+            <a href="https://github.com/violettpv/KPI-Algorithms-and-Data-Structures/tree/main/Lab5_Wolves_and_Hare" target="_blank" title="">Wolves and Hare</a>
+            by
+            <a href="https://github.com/violettpv" target="_blank" title="">VIO</a>
+            </p>
+        </footer>
+    </body>
+</html>

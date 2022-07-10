@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link rel="icon" href="images4/s-l500.ico"> 
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body class="grid">
+<div class="box b1">
+    <div class="container x">
+        <h1>Lab №4</h1>
+    </div>
+</div>
+
+<div class="box b2">
+    <span id="storage-data"></span>
+</div>
+
+<div class="box b3">
+    
+    <div class="work none"> 
+        <div class="controls">
+            <button id="close-button" style="left: 10px;" type="close" onclick="workArea(false)"></button>
+            <button id="start-button" style="right: 5%; left: 80%;" type="start" onclick="pressedStart()"></button>
+            <button id="reload-button" class="none" style="right: 10px;" type="reload" onclick="reloadButton()"></button>
+            <span id="notifications" style="margin-right: 1rem; margin-left: auto;"></span>
+
+        </div>
+       
+        <div class="anim-wrapper">
+
+            <div class="anim"></div>
+
+            <div id="square" style="position: absolute; top: 200px; z-index: 200;"></div>
+
+            <div class="bg">                
+                <div class="cookie-bg"></div>
+                <div class="donut-bg"></div>
+                <div class="coke-bg"></div>
+                <div class="pizza-bg"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="box b4">
+    <div class="container y">
+        <h2>By VIO</h2>
+    </div>
+    
+</div>
+
+<div class="box b5">
+    <button id="play-button" type="play" style="font-size: 22px; " onclick="workArea(true)"></button>
+
+    <form action="canvas.html"> <input style="font-size: 15px;" type="submit" value="Canvas Task"/> </form>
+</div>
+
+<div class="box empty"> </div>
+
+<script src="script4.js"></script>
+</body>
+</html>

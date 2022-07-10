@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="text">
+            <a id="name" href="http://www.rules.net.ru/kost.php?id=7">General</a>
+        </div> -->
+
+        <div class="player-area">
+
+            <div class="notifications">
+                <p id="total-player"></p>
+                <button onclick="Roll()">Roll the dices!</button>
+            </div>
+
+            <div class="dices">
+                <div class="dice dice-one" id="dice-one">
+                    <input type="checkbox" id="cube1">
+                    <label for="cube1">№1</label>
+
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-two" id="dice-two">
+                    <input type="checkbox" id="cube2">
+                    <label for="cube2">№2</label>
+
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-three" id="dice-three">
+                    <input type="checkbox" id="cube3">
+                    <label for="cube3">№3</label>
+
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-four" id="dice-four">
+                    <input type="checkbox" id="cube4">
+                    <label for="cube4">№4</label>
+
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-five" id="dice-five">
+                    <input type="checkbox" id="cube5">
+                    <label for="cube5">№5</label>
+
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="text">
+            <a id="name" href="http://www.rules.net.ru/kost.php?id=7">General</a>
+        </div> -->
+
+        <div class="bot-area">
+            <div class="dices">
+                <div class="dice dice-one" id="dice-one">
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-two" id="dice-two">
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-three" id="dice-three">
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-four" id="dice-four">
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+                <div class="dice dice-five" id="dice-five">
+                    <img src="dice.gif" id="shuffle" class="dice-shuffle none">
+                    <img src="dice-01.svg" id="1" class="dice-side none">
+                    <img src="dice-02.svg" id="2" class="dice-side none">
+                    <img src="dice-03.svg" id="3" class="dice-side none">
+                    <img src="dice-04.svg" id="4" class="dice-side none">
+                    <img src="dice-05.svg" id="5" class="dice-side none">
+                    <img src="dice-06.svg" id="6" class="dice-side none">
+                </div>
+            </div>
+
+            <div class="notifications">
+                <p id="total-bot"></p>
+            <p id="bot-text"></p>
+            </div>
+        </div>    
+
+
+
+        <!-- <div class="player-area">
+            <div class="dice-wrapper">
+                <img class="none" id="dice-1">
+                <img class="none" id="dice-2">
+                <img class="none" id="dice-3">
+                <img class="none" id="dice-4">
+                <img class="none" id="dice-5">
+            </div>
+
+            <p id="total"></p>
+            <button onclick="Roll()">Roll the dice!</button>
+        </div> -->
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
